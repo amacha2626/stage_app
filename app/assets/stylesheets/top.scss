@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 header{
-  background-color: lightblue;
+  background-color: #000;
+  color: #fff;
 }
 
 .header-wrapper{
@@ -17,10 +18,13 @@ header{
 
 .header-right{
   display: flex;
+  p{
+    margin-left: 10px;
+  }
 }
 
 .search{
-  background-color: lightgreen;
+  background-color: #eee;
 }
 
 .search-wrapper{
@@ -30,23 +34,117 @@ header{
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
-  input{
+  .radio{
     margin-right: 5px;
+  }
+  label{
+    cursor: pointer;
   }
 }
 
 .search-field{
+  display:flex;
   width: 500px;
-  padding: 3px 20px;
+  padding: 3px 3px 3px 5px;
   background-color: #fff;
   border: 0.5px solid #696969;
   border-radius: 3px;
   input{
     width: 100%;
     border: none;
+    margin-left: 5px;
+  }
+  input:focus{
+    border: none;
+    outline: none;
+  }
+  .fa{
+    height: 16px;
+    margin-top: 4px;
   }
 }
 
 .search-submit{
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
+.gray{
+  background-color: #fafafa;
+}
+
+.contents-wrapper{
+  width: 1000px;
+  margin: auto;
+}
+
+.now-stages{
+  text-align: center;
+  padding: 50px 0;
+  p{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  p::after{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+  }
+}
+
+.stages{
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-btn{
+  margin: auto;
+  width: 150px;
+  height: 10px;
+  line-height: 10px;
+  margin-top: 40px;
+  padding: 20px 20px;
+  background-color: #696969;
+  border-radius: 5px;
+  color: white;
+}
+
+footer{
+  background-color: #000;
+  height: 100px;
+}
+
+.footer-wrapper{
+  line-height: 100px;
+  width: 1000px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  color: #fff;
+  .left{
+    font-size: 30px;
+    position: relative;
+  }
+  .left::before{
+    content: 'Powered by';
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: -25px;
+  }
+  .right{
+    color: #696969;
+  }
 }
