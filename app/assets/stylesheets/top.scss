@@ -14,6 +14,9 @@ header{
   line-height: 80px;
   display: flex;
   justify-content: space-between;
+  .title{
+    font-size: 30px;
+  }
 }
 
 .header-right{
@@ -39,6 +42,7 @@ header{
   }
   label{
     cursor: pointer;
+    line-height: 30px;
   }
 }
 
@@ -127,24 +131,21 @@ footer{
 }
 
 .footer-wrapper{
-  line-height: 100px;
   width: 1000px;
   margin: auto;
   display:flex;
   justify-content: space-between;
   color: #fff;
-  .left{
+  padding: 20px 0;
+  .title{
     font-size: 30px;
-    position: relative;
   }
-  .left::before{
-    content: 'Powered by';
+  .powred{
     font-size: 10px;
     color: white;
-    position: absolute;
-    top: -25px;
   }
   .right{
+    line-height: 60px;
     color: #696969;
   }
 }

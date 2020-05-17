@@ -14,5 +14,10 @@
  *= require_self
  */
 
- @import 'font-awesome-sprockets';
- @import 'font-awesome';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+
+*{
+font-family: 'Noto Serif JP', serif;
+}
