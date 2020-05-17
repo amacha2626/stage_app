@@ -1,9 +1,9 @@
 <header>
   <div class="header-wrapper">
-    <p class="title">Stage</p>
+    <%= link_to 'Stage', root_path, class: 'title'%>
     <div class="header-right">
-      <p>会員登録</p>
-      <p>ログイン</p>
+      <%= link_to '会員登録', new_user_session_path %>
+      <%= link_to 'ログイン', new_user_registration_path %>
     </div>
   </div>
 </header>
