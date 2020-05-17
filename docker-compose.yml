@@ -5,8 +5,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: root
+    volumes:
+        - mysql-data:/var/lib/mysql  
     ports:
-      - "3306:3306"
+      - "4306:3306"
 
   web:
     build: .
@@ -17,3 +19,6 @@ services:
       - "3000:3000"
     links:
       - db
+volumes:
+  mysql-data:
+  bundle: 
