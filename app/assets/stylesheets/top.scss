@@ -15,14 +15,18 @@ header{
   display: flex;
   justify-content: space-between;
   .title{
-    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
   }
 }
 
 .header-right{
   display: flex;
-  p{
+  a{
     margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
